@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--login color-->
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_trans">#B3FFFFFF</color>
+    <color name="color_transprent">#00000000</color>
+    <color name="color_statusBar">#314A60</color>
+    <color name="color_blackLight">#353535</color>
+    <color name="color_blue">#416ac2</color>
+    <color name="color_Sky">#00BFFE</color>
+    <color name="color_yellow">#FFA901</color>
+    <color name="color_light_black">#7f7f7f</color>
+    <color name="color_background">#efeef4</color>
+    <color name="color_home_ortv">#adadad</color>
+    <color name="color_black_dark">#353535</color>
+    <color name="color_tb_click">#00bffe</color>
+    <color name="color_tb_line">#407c7c7c</color>
+    <color name="color_item_line">#c5c5c5</color>
+    <color name="color_hint">#aaaaaa</color>
+</resources>

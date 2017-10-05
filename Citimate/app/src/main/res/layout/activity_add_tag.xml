@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_add_tag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_yellow">
+
+        <ImageView
+            android:id="@+id/iv_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title_toolbar"
+            style="@style/RobotoMediumFonttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add Tag"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvDone"
+            style="@style/RobotoMediumFonttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/clear_button"
+            android:drawableLeft="@mipmap/btn_done"
+            android:drawablePadding="5dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:text="Done"
+            android:textColor="@color/color_black_dark"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutMid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutMid1"
+        android:layout_below="@+id/relative_layout_top"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTagList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutMid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_black_dark"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/addTagLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add_placetv_button"
+            android:elevation="3dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_add_tag" />
+
+            <TextView
+                android:id="@+id/tvPlaces"
+                style="@style/RobotoRegularFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Add New Tag"
+                android:textColor="@color/color_light_black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_nextpage_black" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

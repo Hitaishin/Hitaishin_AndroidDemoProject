@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_yellow">
+
+        <ImageView
+            android:id="@+id/iv_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title_toolbar"
+            style="@style/RobotoMediumFonttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout_top"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/ivListImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/placeholder_details" />
+
+        <ImageView
+            android:id="@+id/ivListImage1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/shadow_details" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/listRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivListImage"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:isIndicator="true">
+
+        </RatingBar>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            style="@style/RobotoRegularFonttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ivListImage"
+            android:layout_alignBottom="@+id/ivListImage"
+            android:layout_alignRight="@+id/ivListImage"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_location"
+            android:gravity="center"
+            android:text="1.7 Miles"
+            android:textColor="@color/colorWhite"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTop"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutMid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvItemName"
+                    style="@style/RobotoRegularFonttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivCategoryImage"
+                    android:padding="5dp"
+                    android:text="New York Public Library"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvTags"
+                    style="@style/RobotoRegularFonttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvItemName"
+                    android:padding="5dp"
+                    android:text="Bar,Hotel"
+                    android:textColor="@color/color_Sky"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tvFourS"
+                    style="@style/RobotoRegularFonttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTags"
+                    android:padding="5dp"
+                    android:text="Powered by FOURSQUARE"
+                    android:textColor="@color/color_light_black"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <view
+                android:id="@+id/view1"
+                class="android.support.v7.widget.AppCompatTextView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/layoutMid1"
+                android:background="@color/color_tb_line" />
+
+            <LinearLayout
+                android:id="@+id/layoutMid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutMid"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/color_Sky"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivCall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/tap_call" />
+
+                    <TextView
+                        android:id="@+id/tvCall"
+                        style="@style/RobotoRegularFonttype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ivCall"
+                        android:text="Call"
+                        android:textColor="@color/colorWhite" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="5dp"
+                    android:src="@mipmap/tap_location"
+                    android:textColor="@color/colorWhite" />
+
+                <view
+                    android:id="@+id/view3"
+                    class="android.support.v7.widget.AppCompatTextView"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_home_ortv" />
+
+                <ImageView
+                    android:id="@+id/ivSaved"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="5dp"
+                    android:src="@mipmap/tap_saved"
+                    android:textColor="@color/colorWhite" />
+
+                <view
+                    android:id="@+id/view4"
+                    class="android.support.v7.widget.AppCompatTextView"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_home_ortv" />
+
+                <ImageView
+                    android:id="@+id/ivChat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="5dp"
+                    android:src="@mipmap/tap_chat"
+                    android:textColor="@color/colorWhite" />
+
+                <view
+                    android:id="@+id/view5"
+                    class="android.support.v7.widget.AppCompatTextView"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_home_ortv" />
+
+                <ImageView
+                    android:id="@+id/ivReview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="5dp"
+                    android:src="@mipmap/tap_review"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <view
+                android:id="@+id/view2"
+                class="android.support.v7.widget.AppCompatTextView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layoutMid1"
+                android:background="@color/color_tb_line" />
+
+            <RelativeLayout
+                android:id="@+id/layoutMid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:background="@color/colorWhite"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvOpenTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/ic_date_time"
+                    android:drawablePadding="5dp"
+                    android:text="Monday-Open"
+                    android:textColor="@color/color_black_dark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvOpenTime"
+                    android:drawablePadding="5dp"
+                    android:text="9:00 AM-10:00 PM"
+                    android:textColor="@color/color_light_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_dropdown" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutMid2"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Monday"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/monday_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="9:00 AM- 10:00 PM"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Tuesday"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tuesday_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="9:00 AM- 10:00 PM"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Wednesday"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/wednesday_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="9:00 AM- 10:00 PM"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Thursday"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/thrusday_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="9:00 AM- 10:00 PM"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Friday"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/friday_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="9:00 AM- 10:00 PM"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Saturday"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/saturday_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="9:00 AM- 10:00 PM"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Sunday"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/sunday_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="9:00 AM- 10:00 PM"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <view
+                android:id="@+id/view6"
+                class="android.support.v7.widget.AppCompatTextView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/time_layout"
+                android:background="@color/color_tb_line" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/RobotoLightFonttype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view6"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@mipmap/ic_location_details"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/address"
+                android:textColor="@color/color_light_black"
+                android:textSize="13sp" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/tvAddress" />
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_outer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                card_view:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/tvViewReview"
+                    style="@style/RobotoRegularFonttype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/color_Sky"
+                    android:drawableRight="@mipmap/ic_nextpage"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="VIEW REVIEW"
+                    android:textColor="@color/colorWhite" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

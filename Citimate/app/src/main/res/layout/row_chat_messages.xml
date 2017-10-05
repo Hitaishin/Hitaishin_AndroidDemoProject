@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="#00000000"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/user_img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/user_image_iv">
+
+            <RelativeLayout
+                android:id="@+id/name_tv_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mssg_tv"
+                    style="@style/RobotoRegularFonttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/incoming_message_bg"
+                    android:minEms="5"
+                    android:text="Dr. Jhon"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    style="@style/RobotoLightFonttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mssg_tv"
+                    android:layout_alignStart="@+id/mssg_tv"
+                    android:layout_below="@+id/mssg_tv"
+                    android:layout_marginTop="12dp"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/color_hint"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/designation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv_layout"
+                android:maxLines="1"
+                android:text="President(TCS)"
+                android:textSize="13dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_image_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/my_mssg_tv"
+                style="@style/RobotoRegularFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/outgoing_message_bg"
+                android:minEms="5"
+                android:text="Dr. Jhon"
+                android:textColor="@color/color_light_black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/my_time_tv"
+                style="@style/RobotoLightFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/my_mssg_tv"
+                android:layout_alignRight="@+id/my_mssg_tv"
+                android:layout_below="@+id/my_mssg_tv"
+                android:layout_marginTop="12dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/color_hint"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

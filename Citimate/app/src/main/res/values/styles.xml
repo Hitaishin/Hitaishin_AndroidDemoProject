@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_yellow</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--For Set Font Type-->
+    <style name="RobotoMediumFonttype">
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="RobotoRegularFonttype">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="RobotoLightFonttype">
+        <item name="android:typeface">sans</item>
+    </style>
+
+
+
+    <style name="listRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/list_rating_bar_full</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+    </style>
+
+
+    <style name="listRatingBar2" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/list_rating_bar_full2</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+    </style>
+
+
+    <style name="listRatingBar1" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/list_rating_bar_full1</item>
+        <item name="android:minHeight">28dip</item>
+        <item name="android:maxHeight">29dip</item>
+    </style>
+
+
+</resources>

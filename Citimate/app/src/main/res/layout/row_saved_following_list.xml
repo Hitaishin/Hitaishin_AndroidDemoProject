@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivUserProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/balak" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/RobotoMediumFonttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/tvFollowing"
+            android:layout_toRightOf="@+id/ivUserProfile"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="name"
+            android:textColor="@color/color_black_dark"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tvFollowersNumbers"
+            style="@style/RobotoLightFonttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/tvFollowing"
+            android:layout_toRightOf="@+id/ivUserProfile"
+            android:maxLines="1"
+            android:text="34 Followers"
+            android:textColor="@color/color_home_ortv"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/RobotoLightFonttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFollowersNumbers"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/tvFollowing"
+            android:layout_toRightOf="@+id/ivUserProfile"
+            android:maxLines="1"
+            android:text="eeeee"
+            android:textColor="@color/color_light_black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tvFollowing"
+            style="@style/RobotoLightFonttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/following_button"
+            android:drawableLeft="@mipmap/ic_following"
+            android:drawablePadding="5dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="Following"
+            android:textColor="@color/color_tb_click"
+            android:textSize="13dp" />
+
+        <view
+            android:id="@+id/view"
+            class="android.support.v7.widget.AppCompatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ivUserProfile"
+            android:background="@color/color_home_ortv" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

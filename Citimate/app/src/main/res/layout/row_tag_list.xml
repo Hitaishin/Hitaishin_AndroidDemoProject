@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_outer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorWhite"
+    android:elevation="5dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivListImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/list_placeholder" />
+
+            <ImageView
+                android:id="@+id/ivListImage1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/shadow_list" />
+
+            <ImageView
+                android:id="@+id/ivUserProfile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/ivListImage"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/balak" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivListImage"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/ivUserProfile"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Vishnu Garg"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tvPlaces"
+                style="@style/RobotoRegularFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ivListImage"
+                android:layout_alignBottom="@+id/ivListImage"
+                android:layout_alignRight="@+id/ivListImage"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_placetv_button"
+                android:drawableLeft="@mipmap/ic_add_place"
+                android:drawablePadding="10dp"
+                android:elevation="3dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="3 Place"
+                android:textColor="@color/color_light_black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutMid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTop"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tvItemName"
+                style="@style/RobotoMediumFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivCategoryImage"
+                android:padding="5dp"
+                android:text="New York Public Library"
+                android:textColor="@color/color_black_dark"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvTags"
+                style="@style/RobotoRegularFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvItemName"
+                android:padding="5dp"
+                android:text="Bar,Hotel"
+                android:textColor="@color/color_Sky"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

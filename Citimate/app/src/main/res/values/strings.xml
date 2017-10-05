@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">CitiMate</string>
+
+
+    <!--Sign Up-->
+
+    <string name="i_agree">I agree all terms and conditions</string>
+    <string name="join_now">JOIN NOW TO CONTINUE...</string>
+    <string name="Have_an_account">ALREADY HAVE AN ACCOUNT  SIGN IN</string>
+    <string name="back_to_signIn">CONTINUE BACK TO  SIGN IN</string>
+    <string name="pros_Cat">Personalized Category</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries but also the leap into electronic typesetting
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="change_password">Change Password</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="Contact_us">Contact us</string>
+    <string name="t_and_c">Terms &amp; Conditions</string>
+    <string name="rate">Rate us</string>
+    <string name="about">About us</string>
+    <string name="logout">Logout</string>
+    <string name="faq">FAQ</string>
+    <string name="copyright1">Copyright @ 2017 all rights Reserved</string>
+    <string name="about1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been.</string>
+
+    <string name="website">www.citimate.com</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAaaavelICQNUyoqabxrNB644yTmNV2mh8</string>
+
+    <string name="address">121 W 45th St,Near Idex Hotel and Front of The Mall of Torirus of New york,NY 10036,</string>
+
+    <string name="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+    <string name="Authentication">Authentication is required,you need to sign in to your account</string>
+
+
+        <string-array name="my_array">
+            <item>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been.</item>
+            <item>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been.</item>
+            <item>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been.</item>
+            <item>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been.</item>
+            <item>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been.</item>
+            <item>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been.</item>
+        </string-array>
+
+
+</resources>

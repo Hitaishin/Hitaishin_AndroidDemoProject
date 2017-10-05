@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_outer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorWhite"
+    android:elevation="5dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivListImage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/grid_placeholder" />
+
+            <ImageView
+                android:id="@+id/ivListImage1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/shadow_grid" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/listRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivListImage"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                style="@style/RobotoRegularFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ivListImage"
+                android:layout_alignBottom="@+id/ivListImage"
+                android:layout_alignRight="@+id/ivListImage"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="1.7 Miles"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutMid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTop"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tvItemName"
+                style="@style/RobotoRegularFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="New York Public Library"
+                android:textColor="@color/color_black_dark"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvTags"
+                style="@style/RobotoRegularFonttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvItemName"
+                android:layout_margin="5dp"
+                android:text="Bar,Hotel"
+                android:textColor="@color/color_tb_click"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
